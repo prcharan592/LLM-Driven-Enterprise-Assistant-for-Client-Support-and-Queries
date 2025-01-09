@@ -11,15 +11,14 @@ Features
 Steps to Run this project
 ==>Setup the files like below
 project/
-│
-├── app.py                 # Main Flask application
-├── static/
-│   ├── index1.html        # Frontend HTML
-│   ├── style1.css         # CSS styles for the app
-│   ├── script1.js         # JavaScript for frontend interactivity
-├── requirements.txt       # Required Python libraries
-├── service_account.json   # Google Cloud Service Account JSON key
-└── README.md              # Project documentation (this file)
+	•	app.py: Main Flask application file.
+	•	static/: Directory containing frontend files:
+	•	index1.html: HTML file for the chatbot interface.
+	•	style1.css: CSS file for styling the UI.
+	•	script1.js: JavaScript file for frontend interactivity.
+	•	requirements.txt: List of required Python libraries for the project.
+	•	service_account.json: Google Cloud Platform service account credentials (ensure it is stored securely).
+	•	README.md: Project documentation (this file).
 
 ==>follow requirements.txt for setup API
 
