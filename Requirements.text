@@ -1,0 +1,30 @@
+Flask==2.3.3
+google-auth==2.23.3
+google-cloud-aiplatform==1.36.2
+python-dotenv==1.0.0
+
+--------------------------------------------------------------------------------------------------------------
+
+Steps to Set Up Gemini API on Google Cloud 
+	1.	Set Up a GCP Project
+	•	Log in to the GCP Console: https://console.cloud.google.com/
+	•	Go to Project Selector > New Project > Name it > Click Create.
+	2.	Enable APIs
+	•	Navigate to APIs & Services > Enable APIs and Services.
+	•	Enable:
+	•	Vertex AI API
+	•	Cloud Storage API
+	•	IAM Service Account Credentials API.
+	3.	Create a Service Account
+	•	Go to IAM & Admin > Service Accounts > Create Service Account.
+	•	Name the account (e.g., vertex-ai-service-account) > Click Create.
+	4.	Assign Roles
+	•	Assign these roles to the service account:
+	•	Vertex AI User
+	•	Storage Object Viewer.
+	•	Click Done.
+	5.	Generate and Download JSON Key
+	•	Under your service account, go to Manage Keys > Add Key > Create New Key.
+	•	Select JSON, download the key file, and keep it secure.
+
+You’re now ready to use the Vertex AI Gemini API!
