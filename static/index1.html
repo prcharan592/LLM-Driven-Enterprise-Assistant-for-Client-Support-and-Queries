@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iksha Chatbot</title>
+    <link rel="stylesheet" href="static/style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <!-- Chat Icon -->
+    <div class="chat-icon" id="chatIcon">
+        <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" alt="Iksha AI" class="user-img">
+        <span class="online-icon"></span>
+    </div>
+
+    <!-- Chatbot Interface -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <div class="user-info">
+                <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" alt="Iksha AI" class="user-img">
+                <span class="online-icon"></span>
+                <div class="user-details">
+                    <h2>Iksha AI</h2>
+                    <p>Ask me anything!</p>
+                </div>
+            </div>
+            <button class="close-btn" id="closeChat">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <!-- Messages from user and bot will be appended dynamically -->
+        </div>
+        <div id="suggestions-container"></div> <!-- Suggestions dynamically updated -->
+        <div class="chatbot-input">
+            <form id="messageForm">
+                <input type="text" id="userInput" placeholder="Type your message..." required>
+                <button type="submit">
+                    <span class="material-symbols-outlined">send</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="static/script1.js"></script>
+</body>
+</html>
